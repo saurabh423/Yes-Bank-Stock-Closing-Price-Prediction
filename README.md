@@ -31,9 +31,11 @@ It contains the following features:
  It can be observed that in the starting of the month the stock prices are high but after the fraud incident happened the stock prices gradually decreased.
   
  **Analysis of target variable:**
+ 
  ![image](https://user-images.githubusercontent.com/60726057/145950666-447aabab-2ce2-4141-acd0-3a3d21468cb0.png)
 
 **Correlation between the variables:**
+
 ![image](https://user-images.githubusercontent.com/60726057/145950757-bb826069-a19e-4342-b63a-a61daf871556.png)
 
 Here, all variables show the highest correlation among them.
@@ -51,6 +53,7 @@ The 4 regression models build for the data are:
 * k-Nearest Neighbours: Another interesting ML algorithm that one can use here is kNN (k nearest neighbours). Based on the independent variables, kNN finds the similarity between new data points and old data points.
 
 ## Combining all regression models:
+
 ![image](https://user-images.githubusercontent.com/60726057/145951329-d2486f19-2523-4c43-8e74-e111af1d486d.png)
 
 Observation from above table:
@@ -102,6 +105,7 @@ Now building ARIMA model with provided optimal parameters p(2), d(0) and q(1):
 An auto-ARIMA model uses past data to understand the pattern in the time series. Using these values, the model captured a decreasing trend in the series.
 
 **Performance metrics for auto-Arima:**
+
 ![image](https://user-images.githubusercontent.com/60726057/145952200-401f091a-50cf-4336-a34e-5fbc9bb0b190.png)
 
 * Around 25.5% MAPE implies the model is about 74.5% accurate in predicting the test set observations.
@@ -161,12 +165,15 @@ Used the performance_metrics utility to compute the Mean Squared Error(MSE), Roo
 ### Plotting Metrics:
 
 **Mean Absolute Error (MAE)**
+
 ![image](https://user-images.githubusercontent.com/60726057/145953175-81bf6a09-58a1-4e4b-8521-ab5527721ba4.png)
 
 **Root Mean Square Error (RMSE)**
+
 ![image](https://user-images.githubusercontent.com/60726057/145953219-94282537-cbf8-44d2-b04a-0a97045a0843.png)
 
 **Mean Absolute Percentage Error (MAPE)**
+
 ![image](https://user-images.githubusercontent.com/60726057/145953284-61980867-0564-41e3-a2bf-0282a5eb558a.png)
 
 Here as shown for MAPE(Mean Absolute Percentage Error). Dots show the absolute percent error for each prediction in df_cv. The blue line shows the MAPE, where the mean is taken over a rolling window of the dots.
